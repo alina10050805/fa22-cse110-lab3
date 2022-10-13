@@ -1,0 +1,122 @@
+@font-face {
+    font-family: 'MyFont'; /*to use later*/
+    src: url("Education Childsmart.woff"); /*URL to the font*/
+}
+
+* { /* for all text color*/
+    color: black;       /* color use color name */
+}
+
+/* sizing max-width and min-width */    /*media query */
+@media (min-width: 680px), (max-width: 1400px), screen and (orientation: landscape) { 
+    body { /*page view */
+        margin-top: 1em;        /* use 3 unique relative unit */    /*Margin long */
+        margin-bottom: 10ex;
+        margin-left: 3ch;
+        margin-right: 2em;
+        background-color: snow;     /* background */
+    }
+
+    h1 { /*header 1 look */
+        margin: auto;       /* auto margin */
+        color: rgb(106, 42, 42);    /*color use rgb(r, g, b) */
+        background-color: #BBFFFF;  /*color use #FFFFFF */
+        text-align: center;     /*text align */
+        position: static;       /*position static */
+        font-family: MyFont     /* font*/
+    }
+
+    .crumbs { /*map grid */
+        margin: 3px 5px 3px 5px;    /*margin short */
+        position: relative;     /*position relative */
+        display: grid;          /* grid */
+        grid-template-columns: 3cm 30mm 120Q 3cm 30mm 120Q 3cm 30mm 120Q 3cm 3cm;   /*use 3 unique absolute unit */
+        grid-template-rows: 30px;
+        justify-items: center;
+    }
+
+    h2 { /* header 2 look */
+        padding: 2px 2px 2px 3px;   /*padding short */
+        color: MidnightBlue;
+        text-decoration: underline;     /* text decoration */
+        background-color: hsl(34, 78%, 91%);    /*color use hsl(h, s, l) */
+        text-decoration: dotted;
+        position: static;
+    }
+
+    h4 { /* header 4 with border */
+        height: 5mm;                /*sizing height and width */
+        width: 3cm;
+        padding-top: 1mm;           /*padding long */
+        padding-bottom: 1mm;
+        padding-left: 5mm;
+        padding-right: 5mm;
+        border-style: dotted;       /* border */
+        border-color: aqua;
+        border-width: 1mm;
+        border-radius: 5mm;
+    }
+
+    .list-agenda { /* agenda list with border */
+        color: darkgreen;
+        display: flex;              /* flexbox */
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 10px 20px;
+        width: 15cm;
+        border-style: groove;
+        border-color: aqua;
+        border-width: 1mm;
+        border-radius: 5mm;
+    }
+
+    #Form {
+        color: blue;
+    }
+
+    a[href="https://www.when2meet.com/?17160888-43qYc"] {
+        color: cornflowerblue;
+    }
+
+    h1, h2, h4 {
+        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    }
+
+    li li {
+        list-style-type: square;
+    }
+
+    h4 ~ p {
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    }
+
+    h4 + p {
+        color: cadetblue;
+    }
+
+    ul.memberName > li {
+        color: rgb(2, 18, 13);
+    }
+
+    img.fit-picture {
+        position: static;
+    }
+
+    button:hover {  /*pseudo-class :hover */
+        color: red;
+        background-color: greenyellow;
+    }
+
+    button:active {
+        color: black;
+        background-color: salmon;
+    }
+
+    input {
+        display: inline;        /* display inline*/
+    }
+
+    video, audio {
+        display: block;         /* display block*/
+    }
+}
